@@ -7,4 +7,5 @@ exports.fullEmail = {
   user: 'your email',
   password: 'your password',
   from: '', // eg: egg-full-email <alex_my@126.com>
+  debug: false,
 };
