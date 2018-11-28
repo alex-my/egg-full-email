@@ -75,7 +75,7 @@ module.exports = app => {
       // After changed the password
 
       const to = 'somebody@gmail.com';
-      const subject = 'hi egg-full-email';
+      const subject = 'reset password';
       const html =
         '<p><span style="color: red">You have now changed your password. </span></p>';
       const result = await app.fullEmail.sender(to, subject, html);
