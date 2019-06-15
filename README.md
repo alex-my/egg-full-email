@@ -30,7 +30,7 @@ Description here.
 
 ## Important
 
-> nodemailer@4.7.0
+> nodemailer@6.2.1
 
 ## Install
 

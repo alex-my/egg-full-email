@@ -26,7 +26,7 @@ Description here.
 
 ## 依赖
 
-> nodemailer@4.7.0
+> nodemailer@6.2.1
 
 ## 安装
 
