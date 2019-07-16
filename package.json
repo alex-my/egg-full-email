@@ -1,6 +1,6 @@
 {
   "name": "egg-full-email",
-  "version": "1.0.5",
+  "version": "1.1.5",
   "description": "send email by node",
   "eggPlugin": {
     "name": "fullEmail"
@@ -12,7 +12,7 @@
     "egg-email"
   ],
   "dependencies": {
-    "nodemailer": "^6.2.1"
+    "nodemailer": "^6.3.0"
   },
   "devDependencies": {
     "autod": "^3.1.0",
@@ -21,7 +21,7 @@
     "egg-bin": "^4.13.0",
     "egg-ci": "^1.12.0",
     "egg-mock": "^3.23.1",
-    "eslint": "^5.16.0",
+    "eslint": "^6.0.1",
     "eslint-config-egg": "^7.4.1",
     "webstorm-disable-index": "^1.2.0"
   },
