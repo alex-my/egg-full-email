@@ -129,6 +129,12 @@ module.exports = app => {
   - "Zoho"
   - "qiye.aliyun"
 
+## CHANGELOG
+
+- `1.2.5`
+  - `2019/08/29`
+    - 更新依赖版本
+
 ## License
 
 [MIT](LICENSE)
