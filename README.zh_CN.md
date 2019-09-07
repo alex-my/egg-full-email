@@ -74,6 +74,8 @@ module.exports = app => {
       const subject = '密码修改通知';
       const html =
         '<p><span style="color: red">当前您的密码已被修改，如果不是您的操作，请及时修改密码或者联系我们</span></p>';
+
+      // result: 如果成功返回 true, 否则返回 false
       const result = await app.fullEmail.sender(to, subject, html);
 
       this.ctx.body = '密码修改成功';

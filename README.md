@@ -79,6 +79,8 @@ module.exports = app => {
       const subject = 'reset password';
       const html =
         '<p><span style="color: red">You have now changed your password. </span></p>';
+
+      // result: true if success, or false
       const result = await app.fullEmail.sender(to, subject, html);
 
       this.ctx.body = 'reset password success';
