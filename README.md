@@ -44,7 +44,7 @@ $ npm i egg-full-email --save
 // {app_root}/config/plugin.js
 exports.fullEmail = {
   enable: true,
-  package: 'egg-full-email',
+  package: "egg-full-email"
 };
 ```
 
@@ -53,13 +53,13 @@ exports.fullEmail = {
 ```js
 // {app_root}/config/config.default.js
 exports.fullEmail = {
-  service: 'qiye.aliyun', // https://nodemailer.com/smtp/well-known/, eg: qiye.aliyun, 126
-  port: '465', // SMTP port
+  service: "qiye.aliyun", // https://nodemailer.com/smtp/well-known/, eg: qiye.aliyun, 126
+  port: "465", // SMTP port
   ssl: true, // use ssl
-  user: 'your email',
-  password: 'your password',
-  from: '', // eg: egg-full-email <alex_my@126.com>
-  debug: false,
+  user: "your email",
+  password: "your password",
+  from: "", // eg: egg-full-email <alex_my@126.com>
+  debug: false
 };
 ```
 
@@ -68,22 +68,22 @@ see [config/config.default.js](config/config.default.js) for more detail.
 ## Example
 
 ```js
-'use strict';
+"use strict";
 
 module.exports = app => {
   class HomeController extends app.Controller {
     async resetPassword() {
       // After changed the password
 
-      const to = 'somebody@gmail.com';
-      const subject = 'reset password';
+      const to = "somebody@gmail.com";
+      const subject = "reset password";
       const html =
         '<p><span style="color: red">You have now changed your password. </span></p>';
 
       // result: true if success, or false
       const result = await app.fullEmail.sender(to, subject, html);
 
-      this.ctx.body = 'reset password success';
+      this.ctx.body = "reset password success";
     }
   }
   return HomeController;
@@ -137,6 +137,9 @@ module.exports = app => {
 
 ## CHANGELOG
 
+- `1.3.5`
+  - `2020/03/23`
+    - Update the dependent
 - `1.2.5`
   - `2019/08/29`
     - Update the dependent
