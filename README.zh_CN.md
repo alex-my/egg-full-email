@@ -40,7 +40,7 @@ $ npm i egg-full-email --save
 // config/plugin.js
 exports.fullEmail = {
   enable: true,
-  package: "egg-full-email"
+  package: "egg-full-email",
 };
 ```
 
@@ -54,7 +54,7 @@ exports.fullEmail = {
   user: "your email",
   password: "your password",
   from: "", // eg: egg-full-email <alex_my@126.com>
-  debug: false
+  debug: false,
 };
 ```
 
@@ -65,7 +65,7 @@ exports.fullEmail = {
 ```js
 "use strict";
 
-module.exports = app => {
+module.exports = (app) => {
   class HomeController extends app.Controller {
     async resetPassword() {
       // 修改密码之后，发起通知
@@ -133,6 +133,9 @@ module.exports = app => {
 
 ## CHANGELOG
 
+- `1.4.5`
+  - `2020/07/23`
+    - 更新依赖
 - `1.3.5`
   - `2020/03/23`
     - 更新依赖
